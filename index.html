@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Xiangyu Wang — mathematics Ph.D. student at the University of Illinois Urbana-Champaign. Harmonic analysis, restriction, Kakeya, decoupling and local smoothing.">
+  <title>Xiangyu Wang | Mathematics</title>
+  <style>
+    :root {
+      --ink: #202e3a;
+      --muted: #62717c;
+      --blue: #245e7b;
+      --line: #e0e7eb;
+      --paper: #fff;
+      --wash: #f6f9fa;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; background: var(--paper); color: var(--ink); font: 16px/1.75 Arial, Helvetica, sans-serif; }
+    a { color: var(--blue); text-underline-offset: 3px; }
+    a:hover { color: #123e58; }
+    .wrap { width: min(960px, calc(100% - 44px)); margin: auto; }
+    header { border-bottom: 1px solid var(--line); background: #fff; }
+    .topbar { display: flex; align-items: center; justify-content: space-between; gap: 18px; min-height: 76px; }
+    .brand { text-decoration: none; color: var(--ink); font-family: Georgia, serif; font-size: 20px; font-weight: bold; }
+    nav { display: flex; gap: 22px; flex-wrap: wrap; }
+    nav a { color: var(--muted); text-decoration: none; font-size: 13px; }
+    main { padding-bottom: 45px; }
+    .intro { padding: 76px 0 61px; border-bottom: 1px solid var(--line); }
+    .eyebrow { text-transform: uppercase; letter-spacing: 2px; font-size: 11px; font-weight: bold; color: var(--blue); margin: 0 0 12px; }
+    h1, h2, h3 { font-family: Georgia, 'Times New Roman', serif; font-weight: normal; }
+    h1 { font-size: clamp(44px, 7.5vw, 70px); line-height: 1.07; letter-spacing: -.035em; margin: 0 0 14px; }
+    .role { color: #4d6372; font-size: 20px; margin: 0 0 20px; }
+    .intro-text { max-width: 735px; color: var(--muted); margin: 0; }
+    .links { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 28px; }
+    .button { display: inline-block; border-radius: 5px; padding: 9px 17px; text-decoration: none; border: 1px solid #bbd0dc; font-size: 13px; font-weight: bold; }
+    .button.primary { background: var(--blue); border-color: var(--blue); color: white; }
+    section { padding: 46px 0; border-bottom: 1px solid var(--line); scroll-margin-top: 25px; }
+    h2 { font-size: 32px; margin: 0 0 18px; letter-spacing: -.02em; }
+    .body-copy { max-width: 780px; margin: 0; color: #495865; }
+    .topics { display: flex; flex-wrap: wrap; gap: 9px; list-style: none; padding: 0; margin: 20px 0 0; }
+    .topics li { background: var(--wash); border: 1px solid var(--line); border-radius: 4px; padding: 5px 13px; font-size: 13px; }
+    .paper-list { list-style: none; padding: 0; margin: 0; }
+    .paper { padding: 18px 0 20px; border-top: 1px solid var(--line); }
+    .paper h3 { font-size: 21px; line-height: 1.4; margin: 0 0 5px; }
+    .paper p { margin: 5px 0; font-size: 14px; color: var(--muted); }
+    .paper .authors { color: #445460; }
+    .paper .status { font-weight: bold; color: #386a58; }
+    .paper a { font-size: 13px; font-weight: bold; }
+    .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 45px; }
+    .grid h2 { margin-bottom: 16px; }
+    .grid p { margin: 6px 0; font-size: 14px; color: var(--muted); }
+    .grid strong { color: var(--ink); }
+    .contact { padding: 36px 30px; margin-top: 38px; border-radius: 6px; background: var(--wash); border: 1px solid var(--line); }
+    .contact h2 { margin-bottom: 7px; }
+    footer { border-top: 1px solid var(--line); color: var(--muted); font-size: 12px; padding: 22px 0 32px; }
+    @media (max-width: 680px) {
+      .topbar { padding: 16px 0; flex-direction: column; align-items: flex-start; }
+      nav { gap: 11px 18px; }
+      .intro { padding: 49px 0; }
+      section { padding: 34px 0; }
+      .grid { grid-template-columns: 1fr; gap: 0; }
+      .paper h3 { font-size: 19px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap topbar">
+      <a class="brand" href="#home">Xiangyu Wang</a>
+      <nav aria-label="Main navigation">
+        <a href="#research">Research</a>
+        <a href="#publications">Publications</a>
+        <a href="#background">Background</a>
+        <a href="#contact">Contact</a>
+        <a href="Xiangyu_Wang_CV.pdf">CV (PDF)</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap" id="home">
+    <div class="intro">
+      <p class="eyebrow">Mathematics · University of Illinois Urbana-Champaign</p>
+      <h1>Xiangyu Wang</h1>
+      <p class="role">Ph.D. Student in Mathematics</p>
+      <p class="intro-text">
+        I am a Ph.D. student in Mathematics at the University of Illinois Urbana-Champaign,
+        advised by <strong>Xiaochun Li</strong>. My primary research area is harmonic analysis,
+        particularly Fourier restriction, Kakeya-type problems, decoupling, and local smoothing.
+        I am also interested in additive combinatorics and analytic number theory.
+      </p>
+      <div class="links">
+        <a class="button primary" href="#publications">View Publications</a>
+        <a class="button" href="Xiangyu_Wang_CV.pdf">Download CV</a>
+        <a class="button" href="mailto:xw70@illinois.edu">Email</a>
+      </div>
+    </div>
+
+    <section id="research">
+      <h2>Research Interests</h2>
+      <p class="body-copy">My research focuses on harmonic analysis, including geometric and analytic methods related to restriction estimates and wave equations.</p>
+      <ul class="topics">
+        <li>Fourier Restriction</li>
+        <li>Kakeya-type Problems</li>
+        <li>Decoupling</li>
+        <li>Local Smoothing</li>
+        <li>Additive Combinatorics</li>
+        <li>Analytic Number Theory</li>
+      </ul>
+    </section>
+
+    <section id="publications">
+      <h2>Publications &amp; Preprints</h2>
+      <ol class="paper-list">
+        <li class="paper">
+          <h3>Restriction Estimates Using Multilinear Kakeya</h3>
+          <p>For sufficiently large dimensions, this approach yields better exponents than direct applications of polynomial partitioning.</p>
+          <a href="https://arxiv.org/abs/2610.17752" target="_blank" rel="noopener noreferrer">arXiv:2610.17752</a>
+        </li>
+        <li class="paper">
+          <h3>Cone Restriction Estimates under Half-Scale Dimensional Conditions</h3>
+          <p>Broad restriction estimates and localized multilinear methods under half-scale dimensional conditions.</p>
+          <a href="https://arxiv.org/abs/2610.16294" target="_blank" rel="noopener noreferrer">arXiv:2610.16294</a>
+        </li>
+        <li class="paper">
+          <h3>Wave Packet Density in Local Smoothing: Refinements and Limitations</h3>
+          <p>Refinements of wave packet density estimates for wave equations and a Euclidean counterexample illuminating the framework's limitations.</p>
+          <a href="https://arxiv.org/abs/2609.34675" target="_blank" rel="noopener noreferrer">arXiv:2609.34675</a>
+        </li>
+        <li class="paper">
+          <h3>A Weighted Restriction Estimate in ℝ²</h3>
+          <p class="authors">With Zhenbin Cao, Feilong Guo, and Junfeng Li.</p>
+          <a href="https://arxiv.org/abs/2609.12587" target="_blank" rel="noopener noreferrer">arXiv:2609.12587</a>
+        </li>
+        <li class="paper">
+          <h3>On Oscillatory Integral Operators satisfying the Cinematic Curvature Condition</h3>
+          <a href="https://arxiv.org/abs/2512.22516" target="_blank" rel="noopener noreferrer">arXiv:2512.22516</a>
+        </li>
+        <li class="paper">
+          <h3>On Cone Restriction Estimates in Higher Dimensions</h3>
+          <p class="status">Accepted by Journal of Fourier Analysis and Applications.</p>
+          <a href="https://arxiv.org/abs/2411.02961" target="_blank" rel="noopener noreferrer">arXiv:2411.02961</a>
+        </li>
+        <li class="paper">
+          <h3>On Integers whose Friable Component is Large</h3>
+          <p class="authors">With Gérald Tenenbaum.</p>
+          <a href="https://arxiv.org/abs/2609.37507" target="_blank" rel="noopener noreferrer">arXiv:2609.37507</a>
+        </li>
+        <li class="paper">
+          <h3>A Short Proof of a Theorem of Pan and Zhang</h3>
+          <a href="https://arxiv.org/abs/2609.37508" target="_blank" rel="noopener noreferrer">arXiv:2609.37508</a>
+        </li>
+      </ol>
+    </section>
+
+    <section id="background" class="grid">
+      <div>
+        <h2>Education</h2>
+        <p><strong>University of Illinois Urbana-Champaign</strong></p>
+        <p>Ph.D. in Mathematics, in progress</p>
+        <p>Fall 2023 – present</p>
+        <p>Advisor: Xiaochun Li</p>
+      </div>
+      <div>
+        <h2>Teaching Experience</h2>
+        <p><strong>Discussion Sections</strong> — scheduled for Spring 2027.</p>
+        <p><strong>Mathematics Tutor</strong> — MATH 241 (Calculus III).</p>
+        <p><strong>Grader</strong> — MATH 512 (Algebraic Geometry), MATH 444 (Elementary Real Analysis), MATH 448 (Complex Variables).</p>
+      </div>
+    </section>
+
+    <div id="contact" class="contact">
+      <h2>Contact</h2>
+      <p>Department of Mathematics<br>University of Illinois Urbana-Champaign</p>
+      <p>Email: <a href="mailto:xw70@illinois.edu">xw70@illinois.edu</a></p>
+    </div>
+  </main>
+  <footer><div class="wrap">© <span id="copyright-year">2026</span> Xiangyu Wang · Academic Website</div></footer>
+</body>
+</html>

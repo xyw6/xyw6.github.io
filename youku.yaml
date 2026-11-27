@@ -1,0 +1,53 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: Rule
+log-level: silent
+
+proxies:
+  - name: Los Angeles
+    type: ss
+    server: static5.uiuc.sb
+    port: 21660
+    cipher: aes-128-gcm
+    password: yangchaoyue
+    udp: true
+    skip-cert-verify: true
+
+  - name: Shanghai
+    type: ss
+    server: static5.uiuc.sb
+    port: 21784
+    cipher: aes-128-gcm
+    password: yangchaoyue
+    udp: true
+    skip-cert-verify: true
+
+proxy-groups:
+  - name: Booster
+    type: select
+    proxies:
+       - Los Angeles
+       - DIRECT
+
+  - name: Unblock
+    type: select
+    proxies:
+       - Shanghai
+
+rules:
+  - DOMAIN-SUFFIX,iq.com,Unblock
+  - DOMAIN-SUFFIX,qy.net,Unblock
+  - DOMAIN-SUFFIX,iqiyi.com,Unblock
+  - DOMAIN-SUFFIX,y.qq.com,Unblock
+  - DOMAIN-SUFFIX,l.qq.com,Unblock
+  - DOMAIN-SUFFIX,video.qq.com,Unblock
+  - DOMAIN-SUFFIX,bilibili.com,Unblock
+  - DOMAIN-SUFFIX,mgtv.com,Unblock
+  - DOMAIN-SUFFIX,music.163.com,Unblock
+  - DOMAIN-SUFFIX,kugou.com,Unblock
+  - DOMAIN-SUFFIX,youku.com,Unblock
+  - DOMAIN-SUFFIX,doubao.com,Unblock
+  - IP-CIDR,47.91.203.0/24,Unblock
+  - GEOIP,CN,Booster
+  - MATCH,DIRECT
